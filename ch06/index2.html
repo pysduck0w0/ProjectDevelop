@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>問卷調查</h1>
+    <form action="">
+
+        <div>
+            <label>男</label>
+            <input  name="gender"  type="radio">
+            <label>女</label>
+            <input  name="gender"  type="radio">
+            <label>其它</label>
+            <input  name="gender"  type="radio">
+        </div>
+    
+        <div>
+            <label>喜歡的寶可夢</label>
+            <input type="checkbox">
+            <label>皮卡丘</label>
+            <input type="checkbox">
+            <label>噴火龍</label>
+            <input type="checkbox">
+            <label>伊布</label>
+        </div>
+
+        <div>
+            <label >email:</label>
+            <input type="email">
+        </div>
+
+        <div>
+            <label>身分證:</label>
+            <input placeholder="Ex:S123456789" pattern="[A-Za-z]{1}[0-9]{9}" maxlength="10" type="text">
+        </div>
+
+        <div>
+            <label>電話:</label>
+            <input placeholder="Ex:0912345678" pattern="09[0-9]{8}" maxlength="10" type="tel">
+        </div>
+
+        <div>
+            <label >滿意程度:0 - 5</label>
+            <input min="0" max="10" step="1" type="range">
+        </div>
+
+        <div>
+            <label >滿意程度:0 - 5</label>
+            <input min="0" max="10" step="1" type="number">
+        </div>
+
+        <div>
+            <label>顏色:</label>
+            <input type="color">
+        </div>
+
+        <div>
+            <label >時間:</label>
+            <input type="date">
+            <input type="time">
+            <input type="datetime-local">
+        </div>
+
+        <select>
+            <optgroup label="東北亞">
+                <option>日本</option>
+            <option>南韓</option>
+            </optgroup>
+
+            <optgroup label="東亞">
+                <option selected>台灣</option>
+            <option disabled>中國</option>
+            </optgroup>
+            
+        </select>
+
+        <div>
+            <textarea style="width: 100%;height: 50vh;"></textarea>
+        </div>
+
+        <div>
+            <input type="file">
+        </div>
+
+        <div>
+            <input type="submit">
+            <input type="reset">
+        </div>
+
+
+
+
+
+    </form>
+    
+    
+</body>
+</html>

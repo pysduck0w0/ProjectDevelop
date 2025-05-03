@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>問卷調查</h1>
+    <form action="">
+        <div>
+            <label>姓名:</label>
+            <input required autofocus placeholder="Ex:周律彤" type="text">
+        </div>
+
+        <div>
+            <label>身分證:</label>
+            <input required autofocus placeholder="Ex:S123456789" pattern="[A-Z]{1}[0-9]{9}" maxlength="10" type="text">
+        </div>
+
+        <div>
+            <label>性別:</label>
+            <label>男</label>
+            <input name="gender" type="radio">
+            <label>女</label>
+            <input name="gender" type="radio">
+            <label>其它</label>
+            <input name="gender" type="radio">
+        </div>
+
+        <div>
+            <label>喜歡的寶可夢:</label>
+            <input type="checkbox">
+            <label>皮卡丘</label>
+            <input type="checkbox">
+            <label>噴火龍</label>
+            <input type="checkbox">
+            <label>伊布</label>
+
+
+        </div>
+
+        <div>
+            <label>上傳文件:</label>
+            <input type="file">
+        </div>
+
+        <div>
+            <input type="submit" value="寄出">
+            <input type="reset" value="重設">
+        </div>
+
+
+    </form>
+</body>
+</html>
