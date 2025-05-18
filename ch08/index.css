@@ -1,0 +1,20 @@
+h1,p{
+            color: red;
+            background-color: yellowgreen;
+            text-align: center;
+        }
+        .btn{
+            background-color: dodgerblue;
+            color: white;
+            border-style: solid;
+            border-width:1px ;
+            border-color:gray ;
+            padding: 2px 10px ;
+            border-radius: 5px ;
+
+        }
+        #hello{
+            color: blue;
+            background-color: aqua;
+        }
+        
