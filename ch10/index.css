@@ -1,0 +1,21 @@
+.box{
+    text-align: center;
+    border-style: solid ;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.box2{
+    text-align: center;
+    border-style: solid ;
+    padding: 1rem;
+}
+
+.box3{
+    text-align: center;
+    border-style: solid ;
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 1rem;
+}
