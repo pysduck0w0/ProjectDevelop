@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: cornflowerblue;
+            height: 100vh;
+        }
+
+        .block{
+            background-color: palevioletred;
+            width: 50%;
+            /* height: 50%;
+            border-radius: 50%; */
+            aspect-ratio: 1/1;
+            overflow:auto;
+        }
+
+        .block2{
+            background-color: aqua;
+            width: 20%;
+            height: 20%;
+        }
+
+        .block3{
+            background-color: blueviolet;
+            width: 500px;
+            aspect-ratio: 1/1;
+            max-width: 30%;
+            min-width: 100px;
+        }
+        .img{
+            height: 100dvh;
+            width: 100%;
+            object-fit: cover;
+        }
+
+
+    </style>
+
+    <!-- <div class="block">
+
+        <div style="height: 100%;">
+
+                <div class="block2">
+        
+                </div>
+
+        </div>
+
+    </div> -->
+
+    <div id="text" class="block">
+        <p style="font-size: 20vh;">我喜歡寶可夢從第一世代到第九世代</p>
+    </div>
+
+    <script>
+        function switchText(){
+
+            let element = document.getElementById("text")
+
+            isNone = element.style.display == "none"
+
+            if (isNone) {
+                element.style.display = "block"
+            }
+            else{
+                element.style.display = "none"
+            }
+
+
+        }
+    </script>
+
+    <button onclick="switchText()">開啟/關閉</button>
+
+    <div class="block3">
+        
+    </div>
+
+    <img class="img" src="https://truth.bahamut.com.tw/s01/201609/6c898b907d4d7343042507a05f706ff0.JPG" alt="">
+
+
+
+</body>
+</html>
