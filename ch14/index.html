@@ -22,6 +22,9 @@
     </style> -->
 
     <style>
+        *{
+            box-sizing: border-box;
+        }
 
         body{
             margin: 0;
@@ -101,14 +104,43 @@
             opacity: 0.5;
             z-index: 3;
         }
+
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col-5{
+            flex-basis: 50%;
+        }
     </style>
 
-    <div class="navbor">
+    <div class="navbor row" style="align-items: center;">
+                                <!--      垂直置中 -->
+        <div class="col-5">
+            <span style="color: red ;font-size: 2rem;margin-right: 1rem;">
+                傳說寶可夢百科
+            </span>
 
-        <a class="navitem" href="">關於我們</a>
-        <a class="navitem" href="">商品介紹</a>
-        <a class="navitem" href="">聯絡我們</a>
-        <a class="navitem" href="">企業理念</a>
+                                <!-- letter-spacin字與字間距 -->
+            <span style="color: white;letter-spacing: 0.5rem;">
+                探|索|各|種|寶|可|夢
+            </span>
+        </div>
+
+        
+        <div class="col-5">
+            <div class="row" style="justify-content: right;">
+                <a class="navitem" href="">關於我們</a>
+                <a class="navitem" href="">商品介紹</a>
+                <a class="navitem" href="">聯絡我們</a>
+                <a class="navitem" href="">企業理念</a>
+            </div>
+
+        
+        </div>
+
+        
 
     </div>
 

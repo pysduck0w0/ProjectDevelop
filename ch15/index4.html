@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            margin: 0;
+        }
+        *{
+            box-sizing: border-box;
+            /* 必要 */
+        }
+        .row{
+            display: flex;
+            flex-wrap: nowrap;
+            /* 避免換行 */
+            justify-content: space-between;
+            height: 100vh;
+            align-items: end;
+
+        }
+
+        div{
+            border-style: solid;
+            padding: 2rem;
+        }
+
+        .col-2{
+            flex-basis: 20%;
+            height: 25%;
+            /* width =>可以直接用 width */
+        }
+    </style>
+
+    <div class="row">
+        <div class="col-2" style="align-self: flex-start;">
+            A
+        </div>
+
+        <div class="col-2" style="align-self: flex-center;"  >
+            B
+        </div>
+
+        <div class="col-2"style="align-self: flex-end;">
+            C
+        </div>
+    </div>
+</body>
+</html>
