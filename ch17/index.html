@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+
+        .avtar{
+
+            background-color: black;
+            width: 30%;
+            /* 比例維持 */
+            aspect-ratio: 1/1;
+            /* RWD 手機 */
+            border-radius: 50%;
+            /*  */
+            object-fit: cover;
+            object-position: left bottom;
+            /* 比較一下差異 */
+            background-size: contain;
+            background-position: center center;
+        }
+    </style>
+    <img src="./132.webp" alt="大頭貼" class="avtar">
+
+    <style>
+        .table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .table th{
+            padding: 1rem;
+            background-color: lightslategray;
+            color: white;
+        }
+
+        .table td{
+            padding: 1rem;
+        }
+
+    </style>
+
+    <table class="table" border="1">
+        <tr>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+        </tr>
+
+    </table>
+
+    <style>
+        .title{
+            color: black;
+        }
+
+        .title::before{
+            content: "before 標籤";
+            color: aqua;
+        }
+
+        .title::after{
+            content: "after 標籤";
+            color: blueviolet;
+        }
+
+    </style>
+
+    <h1 class="title"> 這是H1標籤</h1>
+
+    <style>
+        .btn-primary{
+            font-size:2rem;
+            padding: 0.5rem 2rem;
+            border-style: solid;
+            border-radius: 1rem;
+            border-color: deepskyblue;
+            cursor: pointer;
+            /* 鼠標形狀 */
+            background-color: white;
+            color: deepskyblue;
+        }
+
+        .btn-primary:hover{
+            background-color: deepskyblue;
+            color: white;
+        }
+        .btn-primary:active{
+            box-shadow: 0px 0px 10px black;
+        }
+
+    </style>
+    <button class="btn-primary">按鈕</button>
+
+
+
+
+</body>
+</html>
