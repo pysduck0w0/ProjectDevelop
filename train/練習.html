@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <h1>美味登素食調查結果</h1>
+
+    <fieldset>
+        <legend>基本資料</legend>
+        
+        <div>
+            <label for="">名子:</label>
+            <input type="text" required>
+        </div>
+
+        <div>
+            <label for="">電話:</label>
+            <input type="text" pattern="[09]{2}[0-9]{8}"required>
+        </div>
+
+        <div>
+            <label for="">性別:</label>
+            <input type="radio" name="application" required>男
+            <input type="radio" name="application" required>女
+        </div>
+        
+    </fieldset>
+
+    <fieldset>
+
+        <legend>今天購買的餐點</legend>
+        <table border="1">
+            <tr>
+                <td>主餐</td>
+                <td>副餐</td>
+                <td>飲料</td>
+                <td>其它</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <select name="" id="">
+                        <option value="">請選擇主餐</option>
+                        <optgroup label="牛">
+                            <option value="">雙層牛肉吉事堡</option>
+                            <option value="">培根牛肉堡</option>
+                        </optgroup>
+
+                        <optgroup label="雞">
+                            <option value="">卡拉雞堡</option>
+                            <option value="">麥香雞</option>
+                        </optgroup>
+                    </select>
+                </td>
+                <td>
+                    <select name="" id="">
+                        <option value="">請選擇副餐</option>
+                        <optgroup label="經典">
+                            <option value="">薯條</option>
+                            <option value="">洋蔥圈</option>
+                        </optgroup>
+
+                        <optgroup label="低卡">
+                            <option value="">沙拉</option>
+                            <option value="">水煮蛋</option>
+                        </optgroup>
+                    </select>
+                </td>
+                <td>
+                    <select name="" id="">
+                        <option value="">請選擇飲料</option>
+                        <optgroup label="熱飲">
+                            <option value="">熱可可歐雷</option>
+                            <option value="">熱紅茶</option>
+                        </optgroup>
+
+                        <optgroup label="冷飲">
+                            <option value="">冰奶茶</option>
+                            <option value="">綠茶</option>
+                        </optgroup>
+                    </select>
+                </td>
+                <td>
+                    <input type="text" placeholder="其它">
+                </td>
+            </tr>
+        </table>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>新品調查</legend>
+        <label for="">是否吃過以下產品?</label><br>
+        <hr>
+        <label for="">主餐:</label>
+        <input type="checkbox">雙層美味保
+        <input type="checkbox">龍蝦堡<br>
+        <label for="">其它:</label>
+        <input type="checkbox">牛肉捲餅
+        <input type="checkbox">密西西比辣雞<br>
+        <label for="">評論:</label><br>
+        <textarea name="" id="" cols="30" rows="10">
+
+        </textarea>
+    </fieldset>
+    <br>
+    <div>
+        <button type="submit">送出</button>
+        <button type="reset">重設</button>
+    </div>
+
+    
+
+    </form>
+    
+</body>
+
+</html>
