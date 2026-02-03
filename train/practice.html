@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *,
+        *::before,
+        *::after{
+            /* 計算真正寬度(包含border寬度) */
+            box-sizing :border-box
+        }
+        body{
+            background-color: palevioletred;
+        }
+        .container{
+            display: flex;
+        }
+        .col{
+            border-style: solid;
+            padding: 1rem;
+            font-size: 2rem;
+        }
+        
+        .position{
+            /* 現有未製作移動 */
+            position: relative;
+            bottom: 10px;
+            /* left: 50%; */
+        }
+        .card{
+            background-color: white;
+            width: 100%;
+            aspect-ratio: 16/4;
+            border-radius: 15px;
+            padding: 2rem;
+            /* ------------------------------------ */
+            position: relative;
+            /* 進階 */
+            container-type: inline-size;
+        }
+        .avater{
+            width: 7.5%;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            background-color: brown;
+            /* ------------------------------------ */
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            transform: translate(-50%,-50%);
+        }
+        .mask{
+            position: fixed;
+            background-color: rgba(0,0,0,0.8);
+            width: 100%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+        }
+        .modal{
+            background-color: white;
+            width: 50%;
+            height: 50%;
+            border: 10px;
+
+        }
+    </style>
+    <!-- <div class="container">
+        <div class="col">DEMO A</div>
+        <div class="col position">DEMO B</div>
+        <div class="col">DEMO C</div>
+        <div class="col">DEMO D</div>
+    </div> -->
+    <div style="padding: 5rem;">
+        <div class="card">
+            <span style="font-size: 10cqw;">測試卡片</span>
+            <div class="avater"></div>
+        </div>
+    </div>
+    <div style="display: block;">
+        <div class="mask">
+            <div class="modal">
+                <h1 style="text-align: center;">測試用公告</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

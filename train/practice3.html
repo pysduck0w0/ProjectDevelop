@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        *,
+        *::before,
+        *::after{
+            /* 計算真正寬度(包含border寬度) */
+            box-sizing: border-box;
+        }
+        body{
+            /* 爺爺 */
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        a{
+            font-size: 5rem;
+            text-decoration: none;
+            color: dodgerblue;
+            font-weight: 500;
+        }
+        /* .container{
+            text-align: center;
+        } */
+        .container{
+            /* 爸爸 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            height: 100%;
+        }
+        ul{
+            list-style: circle;
+        }
+
+        ol{
+            list-style: decimal;/* 數字 */
+            /* list-style: lower-alpha; 英文*/ 
+            /* list-style: lower-roman; 羅馬數字*/
+        }
+        .box{
+            /* 兒子 */
+            /* width: 50%; */
+            aspect-ratio: 1/1;
+            /* 必備 */
+            border-radius: 50%;
+            background-color: aqua;
+            border-style: solid;
+            height: 50%;
+
+        }
+
+        .container2{
+            padding: 5rem;
+        }
+
+        .word{
+            /* aspect-ratio: 1/1; */
+            /* 正方形 */
+            width: 100%;
+            overflow: auto;
+            max-height: 50dvh;
+            border-style: solid;
+            font-size: 2rem;
+            line-height: 3rem;
+            letter-spacing: 0.5rem;
+        }
+
+    </style>
+
+    
+
+    
+
+    <div class="container">
+
+        <!-- <a href="" style="vertical-align: middle;">超連結</a> -->
+        <a href="">超連結</a>
+        <span>測試</span>
+        
+
+    </div>
+
+    <div class="container">
+        <div class="box">
+            123
+        </div>
+
+    </div>
+
+    <ul>
+        <li>噴火龍</li>
+        <li>耿鬼</li>
+        <li>土王</li>
+    </ul>
+    <ol>
+        <li>月亮伊布</li>
+        <li>路卡利歐</li>
+        <li>可達鴨</li>
+    </ol>
+
+    
+    <p style="text-decoration: overline dotted;">上線 點</p>
+    <p style="text-decoration: line-through dashed;">中線 間隔線</p>
+    <p style="text-decoration: underline solid;">下線 實線</p>
+    <p style="text-decoration: underline wavy;">下線 波浪線</p>
+    <p style="text-decoration: underline double red; ">下線 雙線</p>
+    <div class="container2">
+        <div class="word">
+            美國攀岩家艾力克斯．霍諾德（Alex Honnold）今（25）日上午9時挑戰徒手攀登台北101，僅花了91分鐘就登頂，速度相當驚人。事後霍諾德也在記者會上分享自己心得，表示起初看到這麼多人確實很緊張，但後來的氣氛讓他更加興奮；登頂後的他眺望台北風景，也大讚「風景好漂亮！天氣好好！」
+            主持人在記者會上提問霍諾德，剛完成夢想有什麼感想，霍諾德表示，覺得非常開心、非常驚奇，過去曾想像可能會完成這件事，但真正完成時感受大不同。儘管昨天天候不佳，但對他來說影響不大，就像在攀爬巨大岩石一樣，天氣對他來說不是太大問題。
+        </div>
+    </div>
+</body>
+</html>
