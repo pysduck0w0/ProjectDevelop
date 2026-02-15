@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .shadow{
+            border: solid;
+            padding: 10px;
+            width: 50vw;
+            height: 50vh;
+            background-color: aqua;
+        }
+
+        span{
+            font-size: 5rem;
+        }
+        /* .align-middle{
+            font-size: 8rem;
+            vertical-align: middle;
+        } */
+
+        .align-middle{
+            vertical-align: baseline;
+        }
+
+        .d-flex{
+            display: flex;
+            align-items: center;
+        }
+
+
+    </style>
+
+    <div class="shadow" style="box-shadow: 50px 50px 10px lightgrey;">
+        box shadow
+    </div>
+
+    <h1 style="text-shadow: 10px 10px 5px gray;">
+        text shadow
+    </h1>
+
+    <div class="d-flex">
+        <span>A</span>
+        <input type="text">
+        <img class="align-middle" src="./logo.jpg" alt="">
+        <span>B</span>
+        <span>C</span>
+    </div>
+    
+</body>
+</html>
